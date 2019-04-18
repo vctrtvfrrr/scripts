@@ -1,5 +1,6 @@
 #!/bin/bash
 
 TERMS=${@// /+}
+ELINKS=$(which elinks)
 
-/usr/bin/elinks "https://duckduckgo.com/?q=$TERMS"
+$ELINKS "https://duckduckgo.com/?q=$TERMS"
