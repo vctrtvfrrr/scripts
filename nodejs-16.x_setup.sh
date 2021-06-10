@@ -3,7 +3,7 @@
 NPM_GLOBAL="${HOME}/.npm-global"
 NODE_MODULES="${NPM_GLOBAL}/lib/node_modules"
 
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -yqq git nodejs
 
 mkdir $NPM_GLOBAL
