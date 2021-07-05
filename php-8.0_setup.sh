@@ -15,13 +15,18 @@ sudo apt-get install -y \
   php8.0-imagick \
   php8.0-intl \
   php8.0-mbstring \
-  php8.0-mysql
+  php8.0-mysql \
   php8.0-redis \
   php8.0-sqlite3 \
+  php8.0-swoole \
   php8.0-tidy \
   php8.0-uuid \
   php8.0-xdebug \
   php8.0-xml \
   php8.0-xsl \
   php8.0-yaml \
-  php8.0-zip \
+  php8.0-zip
+
+#pear channel-update pear.php.net
+#pecl channel-update pecl.php.net
+#sudo pecl install --configureoptions 'enable-sockets="yes" enable-openssl="yes" enable-http2="yes" enable-mysqlnd="yes" enable-swoole-json="yes" enable-swoole-curl="yes"' swoole
