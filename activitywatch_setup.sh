@@ -14,6 +14,6 @@ if [ ! -f $SETUP_FILE ]; then
 fi
 
 if [ ! -d $INSTALL_PATH ]; then
-	unzip $SETUP_FILE -C /tmp
-	sudo mv /tmp/ActivityWatch $INSTALL_PATH
+	unzip $SETUP_FILE -d /tmp
+	sudo mv /tmp/activitywatch $INSTALL_PATH
 fi
