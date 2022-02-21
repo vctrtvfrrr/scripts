@@ -27,6 +27,6 @@ sudo apt-get install -y \
   php8.0-yaml \
   php8.0-zip
 
-#pear channel-update pear.php.net
-#pecl channel-update pecl.php.net
-#sudo pecl install --configureoptions 'enable-sockets="yes" enable-openssl="yes" enable-http2="yes" enable-mysqlnd="yes" enable-swoole-json="yes" enable-swoole-curl="yes"' swoole
+pear channel-update pear.php.net
+pecl channel-update pecl.php.net
+sudo pecl install --configureoptions 'enable-sockets="yes" enable-openssl="yes" enable-http2="yes" enable-mysqlnd="yes" enable-swoole-json="yes" enable-swoole-curl="yes"' swoole
