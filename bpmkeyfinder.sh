@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
 # ======================================================================
 # Script to analyze BPM and Key of an audio file using Aubio

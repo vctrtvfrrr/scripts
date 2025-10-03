@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
 sudo apt-get install -yqq tilix nautilus-extension-gnome-terminal
 sudo update-alternatives --config x-terminal-emulator

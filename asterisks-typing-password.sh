@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
 # Busca o número da linha
 NUM=$(sudo awk '/Defaults	env_reset/{ print NR; exit }' /etc/sudoers)

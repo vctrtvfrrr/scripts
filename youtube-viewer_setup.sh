@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
 FILE=/tmp/minitube.deb
 sudo apt-get install -yqq wget ubuntu-restricted-extras libavcodec54 libav-tools ffmpeg

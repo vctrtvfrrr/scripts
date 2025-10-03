@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
 sudo apt-get install build-essential libssl-dev git -y
 

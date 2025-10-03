@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
 sudo apt-get install -yqq wget
 wget https://cs.symfony.com/download/php-cs-fixer-v3.phar -O php-cs-fixer

@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
 sudo apt-get install -yqq \
 	g++ build-essential qt5-default qt5-qmake qttools5-dev-tools \

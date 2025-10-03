@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
 FILE=/tmp/dbeaver_setup.deb
 sudo apt-get install -yqq wget
