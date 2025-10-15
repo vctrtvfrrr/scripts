@@ -36,7 +36,8 @@ if ($processToBackup -and (Test-Path $resticRepo)) {
 
     try {
         cd $minecraftPath
-        & restic backup "." --repo $resticRepo --exclude "*.lock" --insecure-no-password 2>&1 | Out-File -FilePath $logFile -Append -Encoding UTF8
+        & restic --repo $resticRepo --insecure-no-password backup "." --exclude "*.lock" 2>&1 | Out-File -FilePath $logFile -Append -Encoding UTF8
+        & restic --repo $resticRepo --insecure-no-password forget --keep-last 3 --prune 2>&1 | Out-File -FilePath $logFile -Append -Encoding UTF8
 
         if ($LASTEXITCODE -eq 0) {
             $successMsg = "Backup do Minecraft concluído com sucesso."
